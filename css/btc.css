@@ -1,0 +1,24 @@
+body{
+    background-position: 0rem;
+    background-color: rgb(205, 227, 247);
+    display: flex;
+}
+.background {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+
+  }
+code{
+    position:relative;
+    padding-left: 350px;
+    color:rgb(33, 10, 241);
+    font-size: 200%;
+}
+p{
+    position:relative;
+    padding-left: 350px;
+    color:rgb(0, 0, 0) ;
+    font-size: 200%;
+}
