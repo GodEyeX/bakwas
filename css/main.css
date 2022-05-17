@@ -121,7 +121,11 @@ span:hover{
     margin-top: 2rem;
 }
 .row {
-    display: flex;
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
   }
   
   /* Create three equal columns that sits next to each other */
@@ -283,4 +287,18 @@ footer{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .credits {
+    padding-top: 2rem;
+  }
 }
